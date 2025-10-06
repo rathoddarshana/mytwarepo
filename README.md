@@ -7,3 +7,14 @@ npx react-native bundle --dev false --entry-file index.ts --bundle-output ios/ma
                             testID="Confirm"
                             onPress={onProceed}
                         />
+
+
+<ProceedModal
+                                visible={modalVisible}
+                                onClose={() => setModalVisible(false)}
+                                onProceed={
+                                    onProceedBtnPress
+                                }
+                            />
+
+                            
